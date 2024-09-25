@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/wp1836708.jpg');  
+     background-size: cover;                        
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+   }
+
+.calculator {
+    background: #e8f0fe;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 220px;
+    height: 60px;
+    text-align: right;
+    font-size: 32px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    color:  #333333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 15px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    color: #333333;
+    background-color: #e3e8ee;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:active {
+
+    transform: scale(0.98);
+}
+
+button.clear {
+    background-color:  #ffcccc; 
+}
+
+button.operator {
+    background-color: #ffd1a9;
+}
+
+button.equals {
+    background-color: #a5e6ff;
+}
+
+button:hover {
+    background-color:  #dce3eb;
+}
+
+button.clear:hover {
+    background-color: #ffb3b3;
+}
+
+button.operator:hover {
+    background-color:#ffb88a;
+}
+
+button.equals:hover {
+    background-color: #8bdcff; 
+}
